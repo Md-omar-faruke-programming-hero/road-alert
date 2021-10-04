@@ -1,0 +1,34 @@
+[
+    {
+        "name":"Full course",
+        "price":" 1,০০০ tk",
+	"practical":" 22 Practical class ",
+	"automobile":" 02 Auto-mobile class ",
+	"theory":" 06 Theory class ",
+	"total":" 30 Total class "
+        
+        
+    },
+    {
+        "name":"Medium course",
+        "price":"7,০০০ tk",
+	"practical":" 12 Practical class ",
+	"automobile":" 04 Auto-mobile class ",
+	"theory":" 04 Theory class ",
+	"total":" 20 Total class "
+        
+        
+    },
+    {
+        "name":"Short course ",
+        "price":"4০০০ tk",
+	"practical":" 06 Practical class ",
+	"automobile":" 02 Auto-mobile class ",
+	"theory":" 02 Theory class ",
+	"total":" 10 Total class "
+        
+        
+    }
+    
+
+]
