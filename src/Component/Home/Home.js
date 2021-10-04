@@ -14,7 +14,7 @@ const Home = () => {
     },[])
     return (
         <div>
-            <h3 className="title text-center">Our Most Popular Courses</h3>
+            <h3 className="title text-center bg-success">Our Most Popular Courses</h3>
             <Row xs={1} md={4} className="g-0 container m-auto">
             {
                 course.map(course=><Course key={course.name} course={course}></Course>)
