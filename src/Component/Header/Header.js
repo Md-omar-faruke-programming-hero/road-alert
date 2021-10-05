@@ -42,7 +42,7 @@ const Header = () => {
               to="/home">Home</NavLink>
         <NavLink activeStyle={{
               fontWeight: "bold"}}  className= "text-light me-3 text-decoration-none" 
-              to="/coursefee">Course fee</NavLink>
+              to="/coursefee">Courses</NavLink>
         <NavLink activeStyle={{
               fontWeight: "bold"}} className= "text-light me-3 text-decoration-none" 
               to="/about">About</NavLink>
