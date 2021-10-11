@@ -1,18 +1,23 @@
 import { BrowserRouter,Switch,Route } from "react-router-dom";
 import About from "./Component/About/About";
 import Advice from "./Component/Advice/Advice";
+import Apply from "./Component/Apply/Apply";
 import Contact from "./Component/Contact/Contact";
 import Coursefee from "./Component/Coursefee/Coursefee";
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 import Home from "./Component/Home/Home";
+import Login from "./Component/Login/Login";
 import Notfound404 from "./Component/Notfound404/Notfound404";
+import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
+import AuthProvider from "./Context/AuthProvider";
 
 
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <BrowserRouter>
       <Header></Header>
       <Switch>
@@ -44,8 +49,16 @@ function App() {
         <Route path="/advice">
             <Advice></Advice>
         </Route>
-        {/* not found componemt*/}
         
+       {/* login component */}
+        <Route path="/login">
+          <Login></Login>
+        </Route>
+
+        <PrivateRoute path="/apply">
+          <Apply></Apply>
+        </PrivateRoute>
+        {/* not found componemt*/}
         <Route path="*">
             <Notfound404></Notfound404>
         </Route>
@@ -55,6 +68,7 @@ function App() {
 
       
       </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
