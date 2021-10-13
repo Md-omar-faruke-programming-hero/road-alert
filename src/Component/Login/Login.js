@@ -4,7 +4,7 @@ import useAuth from '../../Hooks/useAuth';
 
 
 const Login = () => {
-    const {signInUsingGoogle}=useAuth();
+    const {signInUsingGoogle,setloaging}=useAuth();
 
     const location= useLocation()
     const history= useHistory();
@@ -15,7 +15,7 @@ const Login = () => {
         signInUsingGoogle()
         .then((result)=>{
             history.push(redirect_uri);
-           
+           setloaging(false)
             
         })
 
